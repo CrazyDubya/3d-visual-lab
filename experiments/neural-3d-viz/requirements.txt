@@ -1,0 +1,15 @@
+# Core Dependencies
+numpy>=1.23.5
+tensorflow>=2.16.2
+psutil>=5.9.0
+
+# 3D Visualization
+mayavi>=4.7.4
+vtk>=9.0.0
+
+# Apple Silicon Support
+mlx>=0.1.0
+
+# Optional: Enhanced visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0

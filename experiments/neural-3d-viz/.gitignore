@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TensorFlow
+*.pb
+*.pbtxt
+saved_models/
+checkpoints/
+tensorboard_logs/
+
+# MLX
+*.mlx
+*.npz
+
+# Visualization outputs
+*.png
+*.jpg
+*.gif
+*.mp4
+mayavi_scenes/
+
+# Data files
+data/
+datasets/
+*.csv
+*.npy
+
+# Logs
+*.log
+logs/

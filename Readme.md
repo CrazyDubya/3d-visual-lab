@@ -1,4 +1,29 @@
-# 3D-to-2D Projection Lab
+# 3D2DMap — 3D & Visual Experiments
+
+> Consolidated umbrella for Stephen's interactive 3D/visual web projects. The original 3D-to-2D projection lab remains the root app; three standalone 3D/visual projects were merged in as self-contained subdirectories on 2026-09-13 (sources archived, full history preserved in each archived repo).
+
+## Projects
+
+| Project | Path | Stack | What it is |
+|---|---|---|---|
+| 3D-to-2D Projection Lab | `/` (root) | React + Three.js + D3 | Interactive 3D globe ↔ 9 map projections with Tissot distortion analysis |
+| Layer-Stack City Sim | `src/` | TypeScript | Photoshop-style layer-based city simulation system |
+| 3DTravel | `apps/3dtravel/` | Vanilla JS (ES6) | 3D traffic simulator: city grid, vehicles, traffic lights, weather, day/night, analytics |
+| SunSetter | `apps/sunsetter/` | TypeScript + Vite | AR sun-position overlay: NOAA SPA ephemeris, WebGL renderer, sensor fusion, vitest suite |
+| neural-3d-viz | `experiments/neural-3d-viz/` | Python | NN training-loss 3D visualization demo (TensorFlow + Mayavi, MLX/Apple-Silicon variant) |
+
+## Quick start
+
+Each project is self-contained; each keeps its own README with full run instructions.
+
+- **Projection Lab (root):** `npm install && npm run dev`
+- **3DTravel:** see `apps/3dtravel/README.md` — no build step; serve with `python -m http.server 8000`
+- **SunSetter:** see `apps/sunsetter/README.md` — `cd apps/sunsetter && npm install && npm run dev`; run tests with `npm test` (265 vitest tests, passing)
+- **neural-3d-viz:** see `experiments/neural-3d-viz/README.md` — `pip install -r requirements.txt` (needs TensorFlow, Mayavi; Apple-Silicon variant uses MLX)
+
+---
+
+## 3D-to-2D Projection Lab
 
 An interactive web application for exploring map projections and their geometric properties. This educational tool demonstrates how 3D spherical coordinates are transformed into 2D planar representations, allowing users to visualize distortions and compare different projection methods.
 
@@ -178,3 +203,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Three.js contributors for 3D graphics capabilities
 - Natural Earth for public domain map data
 - Cartography community for projection research and documentation
+
+## Provenance
+
+Consolidation wave 2, cluster 2 (2026-09-13): the following repos were merged into this repo as subdirectories and then archived. Archived sources retain their complete trees and full commit history.
+
+| Source repo | Merged into | Original HEAD | Archived |
+|---|---|---|---|
+| `3DTravel` | `apps/3dtravel/` | `868f1834e55915c9ef53a431711f33aef49ac609` | 2026-09-13 |
+| `SunSetter` | `apps/sunsetter/` | `86feaaee5abfe90f7bb343776874ccc029165a47` | 2026-09-13 |
+| `neural-3d-visualization` | `experiments/neural-3d-viz/` | `05f58866e9edeeed96b03b11d3104b6beab640bd` | 2026-09-13 |
+
